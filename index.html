@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Interactive Phone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone">
+    <div class="status">
+      <span>9:41</span>
+      <span>● WiFi ▰</span>
+    </div>
+
+    <h2>My Phone</h2>
+    <div id="home" class="apps">
+      <button onclick="openApp('Messages')">💬<small>Messages</small></button>
+      <button onclick="openApp('Camera')">📷<small>Camera</small></button>
+      <button onclick="openApp('Gallery')">🖼️<small>Gallery</small></button>
+      <button onclick="openApp('Settings')">⚙️<small>Settings</small></button>
+      <button onclick="openApp('Calculator')">🧮<small>Calculator</small></button>
+      <button onclick="openApp('Notes')">📝<small>Notes</small></button>
+    </div>
+
+    <section id="screen" hidden>
+      <h2 id="appTitle"></h2>
+      <div id="appContent"></div>
+      <button onclick="goHome()">🏠 Home</button>
+    </section>
+
+    <div class="dock">
+      <button onclick="openApp('Phone')">📞</button>
+      <button onclick="openApp('Browser')">🌐</button>
+      <button onclick="openApp('Music')">🎵</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
